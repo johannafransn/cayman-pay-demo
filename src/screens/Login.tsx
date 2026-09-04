@@ -1,5 +1,5 @@
 import { StatusBar } from '../components/StatusBar';
-import { Mark } from '../components/icons';
+import { Mark, Building, Money, Globe, Person } from '../components/icons';
 import { BRAND } from '../lib/brand';
 
 interface Props {
@@ -19,17 +19,23 @@ export const Login = ({ onPick }: Props) => (
 
     <div className="loginflow">
       <div className="flownode">
-        <div className="fn-em">🏗️</div>
+        <div className="fn-em">
+          <Building />
+        </div>
         <div className="fn-l">Employer pays</div>
       </div>
       <div className="flowarrow">→</div>
       <div className="flownode">
-        <div className="fn-em">👷</div>
+        <div className="fn-em">
+          <Money />
+        </div>
         <div className="fn-l">You get paid</div>
       </div>
       <div className="flowarrow">→</div>
       <div className="flownode">
-        <div className="fn-em">🌍</div>
+        <div className="fn-em">
+          <Globe />
+        </div>
         <div className="fn-l">Send it home</div>
       </div>
     </div>
@@ -39,7 +45,9 @@ export const Login = ({ onPick }: Props) => (
       <div className="rolelabel">Log in as</div>
 
       <button className="rolecard" onClick={() => onPick('worker')}>
-        <div className="rc-em">👷</div>
+        <div className="rc-em">
+          <Person />
+        </div>
         <div className="rc-body">
           <div className="rc-t">I'm a worker</div>
           <div className="rc-d">Get your pay and send money abroad</div>
@@ -48,7 +56,9 @@ export const Login = ({ onPick }: Props) => (
       </button>
 
       <button className="rolecard" onClick={() => onPick('owner')}>
-        <div className="rc-em">🏗️</div>
+        <div className="rc-em">
+          <Building />
+        </div>
         <div className="rc-body">
           <div className="rc-t">I'm a company owner</div>
           <div className="rc-d">Pay your team instantly, no wire fees</div>
