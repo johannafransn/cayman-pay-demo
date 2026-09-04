@@ -47,17 +47,14 @@ export const OwnerHome = ({ onRunPayroll, onPayOne, onLogout }: Props) => {
               <div className="c">{BUSINESS.category}</div>
             </div>
           </div>
+          <div className="savedline">
+            You saved: <b>US${BUSINESS.savedThisMonth.toLocaleString('en-US', { maximumFractionDigits: 0 })}</b> this
+            month in fees
+          </div>
           <div className="acctdiv" />
           <button className="btn small" onClick={onRunPayroll}>
             Run payroll · {usd2(total)}
           </button>
-        </div>
-
-        <div className="savedbanner">
-          <div className="ic">🐚</div>
-          <div className="t">
-            Your team kept <b>{usd2(BUSINESS.savedThisMonth)}</b> in transfer fees this month by getting paid on {BRAND}.
-          </div>
         </div>
 
         <div className="sectiontitle">Your team</div>

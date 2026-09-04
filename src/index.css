@@ -1193,7 +1193,7 @@ button {
   padding: 0 26px 36px;
 }
 .loginhead {
-  margin-top: 15%;
+  margin-top: 11%;
   text-align: center;
 }
 .loginmark {
@@ -1218,6 +1218,60 @@ button {
   font-size: 15px;
   opacity: 0.9;
   margin-top: 8px;
+}
+.loginflow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 46px;
+}
+.flownode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  width: 82px;
+}
+.fn-em {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.16);
+  display: grid;
+  place-items: center;
+  font-size: 27px;
+}
+.fn-l {
+  font-size: 11.5px;
+  font-weight: 600;
+  opacity: 0.92;
+  text-align: center;
+  line-height: 1.2;
+}
+.flowarrow {
+  font-size: 18px;
+  opacity: 0.65;
+  margin-top: 16px;
+}
+.flowcaption {
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.9;
+  margin: 20px auto 0;
+  max-width: 82%;
+  line-height: 1.4;
+}
+
+/* compact "you saved" line inside the business card (owner home) */
+.savedline {
+  margin-top: 12px;
+  font-size: 12.7px;
+  color: var(--muted);
+}
+.savedline b {
+  color: var(--blue-deep);
+  font-weight: 700;
 }
 .rolecards {
   margin-top: auto;

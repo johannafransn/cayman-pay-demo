@@ -17,6 +17,24 @@ export const Login = ({ onPick }: Props) => (
       <div className="logintag">Get paid. Send money home.</div>
     </div>
 
+    <div className="loginflow">
+      <div className="flownode">
+        <div className="fn-em">🏗️</div>
+        <div className="fn-l">Employer pays</div>
+      </div>
+      <div className="flowarrow">→</div>
+      <div className="flownode">
+        <div className="fn-em">👷</div>
+        <div className="fn-l">You get paid</div>
+      </div>
+      <div className="flowarrow">→</div>
+      <div className="flownode">
+        <div className="fn-em">🌍</div>
+        <div className="fn-l">Send it home</div>
+      </div>
+    </div>
+    <div className="flowcaption">Your pay lands instantly — send it anywhere, for less than Western Union.</div>
+
     <div className="rolecards">
       <div className="rolelabel">Log in as</div>
 
